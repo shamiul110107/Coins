@@ -1,10 +1,5 @@
 import UIKit
 
-struct Item: Hashable {
-    let id: UUID
-    let name: String
-}
-
 enum Section {
     case main
 }
@@ -12,14 +7,14 @@ enum Section {
 class TopRankCryptoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Coin>!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         registerCell()
         collectionView.collectionViewLayout = createLayout()
         createDataSource()
-        applySnapshot()
+        applySnapshot(with: [])
     }
     
     private func registerCell() {
@@ -34,28 +29,27 @@ class TopRankCryptoTableViewCell: UITableViewCell {
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 3)
         group.interItemSpacing = .fixed(8)
-
+        
         let section = NSCollectionLayoutSection(group: group)
-
+        
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
     
     private func createDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView) { collectionView, indexPath, item in
+        dataSource = UICollectionViewDiffableDataSource<Section, Coin>(collectionView: collectionView) { collectionView, indexPath, coin in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoinGridCell", for: indexPath) as? CoinGridCell else {
                 return UICollectionViewCell.init()
             }
-            cell.nameLabel.text = item.name
+            cell.configure(coin: coin)
             return cell
         }
     }
     
-    private func applySnapshot() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+    func applySnapshot(with coins: [Coin]) {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Coin>()
         snapshot.appendSections([.main])
-        let items = (0..<3).map { _ in Item(id: UUID(), name: "samiul\(Int.random(in: 0...100))") }
-        snapshot.appendItems(items)
+        snapshot.appendItems(coins)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }

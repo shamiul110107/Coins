@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,8 +39,8 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$590.09708" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mX-dc-m2s">
-                                <rect key="frame" x="212.66666666666666" y="23.666666666666668" width="75.333333333333343" height="14.333333333333332"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mX-dc-m2s">
+                                <rect key="frame" x="271.66666666666669" y="23.666666666666668" width="16.333333333333314" height="14.333333333333332"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -100,7 +101,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="changeLabel" destination="cY8-E3-Ed6" id="NTc-gQ-FiG"/>
+                <outlet property="coinIcon" destination="1Ib-4X-OEg" id="iXy-0n-rQf"/>
+                <outlet property="coinNameLabel" destination="hmF-xt-i1r" id="gz4-Qy-gDd"/>
+                <outlet property="coinPrice" destination="2mX-dc-m2s" id="9tU-QB-LFJ"/>
+                <outlet property="coinSymbol" destination="wXD-fQ-fT9" id="Dw0-wv-1v3"/>
                 <outlet property="containerView" destination="8X4-HN-NqC" id="r6u-hk-5CP"/>
+                <outlet property="iconArrow" destination="ncG-eM-0LJ" id="pF7-g1-jZc"/>
             </connections>
             <point key="canvasLocation" x="63" y="-17"/>
         </tableViewCell>

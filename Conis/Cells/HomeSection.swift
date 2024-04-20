@@ -4,8 +4,8 @@ enum HomeSection: Equatable {
         return lhs.key == rhs.key
     }
     
-    case topRank(data: [Item])
-    case coinList(data: [Item])
+    case topRank(data: [Coin])
+    case coinList(data: [CoinsData])
     case title(NSAttributedString)
     
     var key: String {

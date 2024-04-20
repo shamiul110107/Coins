@@ -21,6 +21,14 @@
 		188C9FA62BD2FC9000074DC2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FA52BD2FC9000074DC2 /* UIColor+Extension.swift */; };
 		188C9FA82BD2FCC700074DC2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FA72BD2FCC700074DC2 /* UIView+Extension.swift */; };
 		188C9FAC2BD3025200074DC2 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FAB2BD3025200074DC2 /* HomeSection.swift */; };
+		188C9FAE2BD3681C00074DC2 /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FAD2BD3681C00074DC2 /* Coins.swift */; };
+		188C9FB02BD37A3700074DC2 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FAF2BD37A3700074DC2 /* Endpoints.swift */; };
+		188C9FB22BD37A4200074DC2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FB12BD37A4200074DC2 /* ApiService.swift */; };
+		188C9FB42BD37DD700074DC2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FB32BD37DD700074DC2 /* NetworkError.swift */; };
+		188C9FB62BD3816C00074DC2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FB52BD3816B00074DC2 /* HomeViewModel.swift */; };
+		188C9FB92BD3822A00074DC2 /* HomeEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FB82BD3822A00074DC2 /* HomeEndpoints.swift */; };
+		188C9FBC2BD395CB00074DC2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 188C9FBB2BD395CB00074DC2 /* Kingfisher */; };
+		188C9FBE2BD39FC800074DC2 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FBD2BD39FC800074DC2 /* Double+Extension.swift */; };
 		18F913F02BD2BF3300D9A0CF /* CoinGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F913EE2BD2BF3300D9A0CF /* CoinGridCell.swift */; };
 		18F913F12BD2BF3300D9A0CF /* CoinGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F913EF2BD2BF3300D9A0CF /* CoinGridCell.xib */; };
 		18F913F82BD2C4CE00D9A0CF /* TopRankCryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F913F62BD2C4CE00D9A0CF /* TopRankCryptoTableViewCell.swift */; };
@@ -68,6 +76,13 @@
 		188C9FA52BD2FC9000074DC2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		188C9FA72BD2FCC700074DC2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		188C9FAB2BD3025200074DC2 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
+		188C9FAD2BD3681C00074DC2 /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
+		188C9FAF2BD37A3700074DC2 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		188C9FB12BD37A4200074DC2 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		188C9FB32BD37DD700074DC2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		188C9FB52BD3816B00074DC2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		188C9FB82BD3822A00074DC2 /* HomeEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoints.swift; sourceTree = "<group>"; };
+		188C9FBD2BD39FC800074DC2 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		18F913EE2BD2BF3300D9A0CF /* CoinGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGridCell.swift; sourceTree = "<group>"; };
 		18F913EF2BD2BF3300D9A0CF /* CoinGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinGridCell.xib; sourceTree = "<group>"; };
 		18F913F62BD2C4CE00D9A0CF /* TopRankCryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRankCryptoTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188C9FBC2BD395CB00074DC2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,9 +145,14 @@
 			children = (
 				1803DB502BD21E680066CE99 /* AppDelegate.swift */,
 				1803DB522BD21E680066CE99 /* SceneDelegate.swift */,
+				188C9FAD2BD3681C00074DC2 /* Coins.swift */,
+				188C9FB72BD381F500074DC2 /* Endpoint */,
+				188C9FB12BD37A4200074DC2 /* ApiService.swift */,
+				188C9FB32BD37DD700074DC2 /* NetworkError.swift */,
 				18F914002BD2F42900D9A0CF /* Extension */,
 				188C9FAA2BD3013600074DC2 /* Cells */,
 				1803DB542BD21E680066CE99 /* HomeViewController.swift */,
+				188C9FB52BD3816B00074DC2 /* HomeViewModel.swift */,
 				1803DB562BD21E680066CE99 /* Main.storyboard */,
 				1803DB592BD21E6A0066CE99 /* Assets.xcassets */,
 				1803DB5B2BD21E6A0066CE99 /* LaunchScreen.storyboard */,
@@ -175,12 +196,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		188C9FB72BD381F500074DC2 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				188C9FAF2BD37A3700074DC2 /* Endpoints.swift */,
+				188C9FB82BD3822A00074DC2 /* HomeEndpoints.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
 		18F914002BD2F42900D9A0CF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				18F914012BD2F43C00D9A0CF /* String+Extension.swift */,
 				188C9FA52BD2FC9000074DC2 /* UIColor+Extension.swift */,
 				188C9FA72BD2FCC700074DC2 /* UIView+Extension.swift */,
+				188C9FBD2BD39FC800074DC2 /* Double+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -201,6 +232,9 @@
 			dependencies = (
 			);
 			name = Conis;
+			packageProductDependencies = (
+				188C9FBB2BD395CB00074DC2 /* Kingfisher */,
+			);
 			productName = Conis;
 			productReference = 1803DB4D2BD21E680066CE99 /* Conis.app */;
 			productType = "com.apple.product-type.application";
@@ -273,6 +307,9 @@
 				Base,
 			);
 			mainGroup = 1803DB442BD21E680066CE99;
+			packageReferences = (
+				188C9FBA2BD395CB00074DC2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 1803DB4E2BD21E680066CE99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -321,15 +358,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188C9FB62BD3816C00074DC2 /* HomeViewModel.swift in Sources */,
 				188C9FA82BD2FCC700074DC2 /* UIView+Extension.swift in Sources */,
+				188C9FB42BD37DD700074DC2 /* NetworkError.swift in Sources */,
 				18F914052BD2F58300D9A0CF /* InviteFriendCell.swift in Sources */,
 				188C9FAC2BD3025200074DC2 /* HomeSection.swift in Sources */,
 				18F914022BD2F43C00D9A0CF /* String+Extension.swift in Sources */,
+				188C9FAE2BD3681C00074DC2 /* Coins.swift in Sources */,
+				188C9FB92BD3822A00074DC2 /* HomeEndpoints.swift in Sources */,
 				18F913F82BD2C4CE00D9A0CF /* TopRankCryptoTableViewCell.swift in Sources */,
 				18F913FE2BD2F2A600D9A0CF /* TitleCell.swift in Sources */,
 				1803DB552BD21E680066CE99 /* HomeViewController.swift in Sources */,
+				188C9FBE2BD39FC800074DC2 /* Double+Extension.swift in Sources */,
 				18F913F02BD2BF3300D9A0CF /* CoinGridCell.swift in Sources */,
 				1803DB512BD21E680066CE99 /* AppDelegate.swift in Sources */,
+				188C9FB02BD37A3700074DC2 /* Endpoints.swift in Sources */,
+				188C9FB22BD37A4200074DC2 /* ApiService.swift in Sources */,
 				1803DB842BD223810066CE99 /* CoinListCell.swift in Sources */,
 				1803DB532BD21E680066CE99 /* SceneDelegate.swift in Sources */,
 				188C9FA62BD2FC9000074DC2 /* UIColor+Extension.swift in Sources */,
@@ -520,8 +564,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,8 +592,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -683,6 +725,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		188C9FBA2BD395CB00074DC2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		188C9FBB2BD395CB00074DC2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188C9FBA2BD395CB00074DC2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1803DB452BD21E680066CE99 /* Project object */;
 }
