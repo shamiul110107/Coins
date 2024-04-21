@@ -1,7 +1,7 @@
 import Foundation
 
 enum HomeEndpoints: Endpoints {
-    case getCoins
+    case getCoins(offset: Int)
     case searchCoins(keyword: String)
     
     var baseURL: URL {
@@ -9,12 +9,7 @@ enum HomeEndpoints: Endpoints {
     }
     
     var path: String {
-        switch self {
-        case .getCoins:
-            return "/v2/coins"
-        case let .searchCoins(keyword):
-            return "/v2/coins?search=\(keyword)"
-        }
+        return "/v2/coins"
     }
     
     var httpMethod: HTTPMethod {
@@ -26,6 +21,11 @@ enum HomeEndpoints: Endpoints {
     }
     
     var parameters: [String : String] {
-        [:]
+        switch self {
+        case let .getCoins(offset):
+            return ["offset" : "\(offset)", "limit" : "10"]
+        case let .searchCoins(keyword):
+            return ["search" : keyword]
+        }
     }
 }

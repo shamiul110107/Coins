@@ -2,12 +2,18 @@ import Foundation
 
 struct CoinResponse: Codable {
     let status: String?
-    let data: Data?
+    var data: Data?
+    var totalPage: Int {
+        let totalItems = data?.stats?.total ?? 0
+        let itemsPerPage = 10
+        return Int(ceil(Double(totalItems) / Double(itemsPerPage)))
+    }
 }
 
 // MARK: - DataClass
 struct Data: Codable {
-    let coins: [Coin]?
+    var stats: Stats?
+    var coins: [Coin]?
 }
 
 // MARK: - Coin
@@ -16,13 +22,20 @@ struct Coin: Codable, Hashable {
         let url = iconUrl?.replacingOccurrences(of: ".svg", with: ".png")
         return url
     }
-    let uuid, symbol, name: String?
+    let uuid, symbol, name, description: String?
     let iconUrl: String?
     let change: String?
     let price: String?
     let rank: Int?
+    let color: String?
+    let websiteUrl: String?
+    let marketCap: String?
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(uuid)
     }
+}
+
+struct Stats: Codable {
+    var total: Int?
 }

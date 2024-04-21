@@ -8,9 +8,11 @@ class TopRankCryptoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Coin>!
-    
+    var cellTapped: ((Coin) -> Void)?
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        collectionView.delegate = self
         registerCell()
         collectionView.collectionViewLayout = createLayout()
         createDataSource()
@@ -54,3 +56,11 @@ class TopRankCryptoTableViewCell: UITableViewCell {
     }
 }
 
+extension TopRankCryptoTableViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let coin = dataSource.itemIdentifier(for: indexPath) else {
+            return
+        }
+        cellTapped?(coin)
+    }
+}

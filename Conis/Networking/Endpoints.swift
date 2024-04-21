@@ -30,7 +30,7 @@ extension Endpoints {
         guard let url = components.url else {
             fatalError("Could not get url")
         }
-
+        
         var request = URLRequest(url: url)
         request.httpMethod = httpMethod.rawValue
         request.addValue("application/json", forHTTPHeaderField: "Accept")

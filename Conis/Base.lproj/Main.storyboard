@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Imt-jI-8jS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Imt-jI-8jS">
                                 <rect key="frame" x="0.0" y="132" width="393" height="686"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -64,8 +64,127 @@
             </objects>
             <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
         </scene>
+        <!--Coin Detail View Controller-->
+        <scene sceneID="hwv-C4-g4v">
+            <objects>
+                <viewController storyboardIdentifier="CoinDetailViewController" id="mtl-ig-CbB" customClass="CoinDetailViewController" customModule="Conis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0f6-n3-Owt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-botcoin" translatesAutoresizingMaskIntoConstraints="NO" id="534-25-lNA">
+                                <rect key="frame" x="24" y="91" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4h8-kw-udF"/>
+                                    <constraint firstAttribute="width" constant="50" id="SGy-Up-TDL"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Thf-D5-8P3">
+                                <rect key="frame" x="90" y="91" width="285" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-vI-g8F">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIq-iG-cpC">
+                                        <rect key="frame" x="0.0" y="25.333333333333325" width="285" height="14.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVa-k5-Ry8">
+                                        <rect key="frame" x="0.0" y="45.666666666666657" width="285" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11x-7c-G9m">
+                                <rect key="frame" x="24" y="167" width="345" height="602"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xq5-w5-Tsy">
+                                <rect key="frame" x="0.0" y="770" width="393" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="eQd-rb-90l"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GO TO WEBSITE">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToWebsiteButtonAction:" destination="mtl-ig-CbB" eventType="touchUpInside" id="Nhr-Fa-WeP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hty-CY-OZm">
+                                <rect key="frame" x="0.0" y="769" width="393" height="1"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ylw-eo-kfv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l36-JT-5X5">
+                                <rect key="frame" x="356" y="15" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Mbp-Gt-wOt"/>
+                                    <constraint firstAttribute="height" constant="24" id="ytD-Jd-TTz"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="cross"/>
+                                <connections>
+                                    <action selector="dismissButtonAction:" destination="mtl-ig-CbB" eventType="touchUpInside" id="tVd-6c-lKR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hdH-wj-r6o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hdH-wj-r6o" firstAttribute="trailing" secondItem="Thf-D5-8P3" secondAttribute="trailing" constant="18" id="2pj-qA-UTP"/>
+                            <constraint firstItem="hdH-wj-r6o" firstAttribute="trailing" secondItem="l36-JT-5X5" secondAttribute="trailing" constant="13" id="7h2-8H-Ml6"/>
+                            <constraint firstItem="hdH-wj-r6o" firstAttribute="trailing" secondItem="xq5-w5-Tsy" secondAttribute="trailing" id="7zM-Cr-6Jx"/>
+                            <constraint firstItem="hdH-wj-r6o" firstAttribute="bottom" secondItem="xq5-w5-Tsy" secondAttribute="bottom" id="GfN-v5-JLI"/>
+                            <constraint firstItem="Hty-CY-OZm" firstAttribute="top" secondItem="11x-7c-G9m" secondAttribute="bottom" id="JMU-eh-4s7"/>
+                            <constraint firstItem="xq5-w5-Tsy" firstAttribute="leading" secondItem="hdH-wj-r6o" secondAttribute="leading" id="NHe-Bt-UlQ"/>
+                            <constraint firstItem="534-25-lNA" firstAttribute="leading" secondItem="hdH-wj-r6o" secondAttribute="leading" constant="24" id="U1L-6w-P1c"/>
+                            <constraint firstItem="hdH-wj-r6o" firstAttribute="trailing" secondItem="Hty-CY-OZm" secondAttribute="trailing" id="Z57-jz-QpL"/>
+                            <constraint firstItem="hdH-wj-r6o" firstAttribute="trailing" secondItem="11x-7c-G9m" secondAttribute="trailing" constant="24" id="af0-UZ-33J"/>
+                            <constraint firstItem="Thf-D5-8P3" firstAttribute="leading" secondItem="534-25-lNA" secondAttribute="trailing" constant="16" id="bqL-rh-Xix"/>
+                            <constraint firstItem="Thf-D5-8P3" firstAttribute="top" secondItem="534-25-lNA" secondAttribute="top" id="jVg-76-BKS"/>
+                            <constraint firstItem="11x-7c-G9m" firstAttribute="leading" secondItem="hdH-wj-r6o" secondAttribute="leading" constant="24" id="kEB-NV-Fvh"/>
+                            <constraint firstItem="11x-7c-G9m" firstAttribute="top" secondItem="Thf-D5-8P3" secondAttribute="bottom" constant="16" id="pIv-TL-iG7"/>
+                            <constraint firstItem="l36-JT-5X5" firstAttribute="top" secondItem="0f6-n3-Owt" secondAttribute="top" constant="15" id="rV0-sx-HFD"/>
+                            <constraint firstItem="534-25-lNA" firstAttribute="top" secondItem="hdH-wj-r6o" secondAttribute="top" constant="32" id="uF5-Ln-o21"/>
+                            <constraint firstItem="xq5-w5-Tsy" firstAttribute="top" secondItem="Hty-CY-OZm" secondAttribute="bottom" id="wL7-af-HWa"/>
+                            <constraint firstItem="Hty-CY-OZm" firstAttribute="leading" secondItem="hdH-wj-r6o" secondAttribute="leading" id="wPO-EA-GSb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinIcon" destination="534-25-lNA" id="6ne-9e-mGN"/>
+                        <outlet property="coinNameLabel" destination="VvD-vI-g8F" id="Lio-f0-mpb"/>
+                        <outlet property="descriptionlabel" destination="11x-7c-G9m" id="mmP-kh-LoP"/>
+                        <outlet property="marketCapLabel" destination="zVa-k5-Ry8" id="nSJ-15-gWP"/>
+                        <outlet property="priceLabel" destination="TIq-iG-cpC" id="8KG-fX-JKr"/>
+                        <outlet property="websiteButton" destination="xq5-w5-Tsy" id="DhU-Ra-HTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwC-Id-dTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="4"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="cross" width="24" height="24"/>
+        <image name="icon-botcoin" width="40" height="40"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
