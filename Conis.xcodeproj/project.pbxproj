@@ -20,6 +20,8 @@
 		1803DB852BD223810066CE99 /* CoinListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1803DB832BD223810066CE99 /* CoinListCell.xib */; };
 		187FBE772BD50A46004D08CE /* coin.json in Resources */ = {isa = PBXBuildFile; fileRef = 187FBE752BD50606004D08CE /* coin.json */; };
 		187FBE792BD51934004D08CE /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FBE782BD51934004D08CE /* ExtensionTests.swift */; };
+		187FBE7D2BDA63A2004D08CE /* AccessibilityIdentifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FBE7C2BDA63A2004D08CE /* AccessibilityIdentifire.swift */; };
+		187FBE7F2BDA65B8004D08CE /* AccessibilityIdentifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FBE7C2BDA63A2004D08CE /* AccessibilityIdentifire.swift */; };
 		188C9FA62BD2FC9000074DC2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FA52BD2FC9000074DC2 /* UIColor+Extension.swift */; };
 		188C9FA82BD2FCC700074DC2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FA72BD2FCC700074DC2 /* UIView+Extension.swift */; };
 		188C9FAC2BD3025200074DC2 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C9FAB2BD3025200074DC2 /* HomeSection.swift */; };
@@ -85,6 +87,7 @@
 		1803DB832BD223810066CE99 /* CoinListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinListCell.xib; sourceTree = "<group>"; };
 		187FBE752BD50606004D08CE /* coin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = coin.json; sourceTree = "<group>"; };
 		187FBE782BD51934004D08CE /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		187FBE7C2BDA63A2004D08CE /* AccessibilityIdentifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifire.swift; sourceTree = "<group>"; };
 		188C9FA52BD2FC9000074DC2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		188C9FA72BD2FCC700074DC2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		188C9FAB2BD3025200074DC2 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
@@ -171,6 +174,7 @@
 				187FBE7B2BD520FA004D08CE /* State */,
 				187FBE7A2BD520F2004D08CE /* Data */,
 				1803DB562BD21E680066CE99 /* Main.storyboard */,
+				187FBE7C2BDA63A2004D08CE /* AccessibilityIdentifire.swift */,
 				1803DB592BD21E6A0066CE99 /* Assets.xcassets */,
 				1803DB5B2BD21E6A0066CE99 /* LaunchScreen.storyboard */,
 				1803DB5E2BD21E6A0066CE99 /* Info.plist */,
@@ -516,6 +520,7 @@
 				18F913F02BD2BF3300D9A0CF /* CoinGridCell.swift in Sources */,
 				1803DB512BD21E680066CE99 /* AppDelegate.swift in Sources */,
 				188C9FB02BD37A3700074DC2 /* Endpoints.swift in Sources */,
+				187FBE7D2BDA63A2004D08CE /* AccessibilityIdentifire.swift in Sources */,
 				188C9FB22BD37A4200074DC2 /* ApiService.swift in Sources */,
 				1803DB842BD223810066CE99 /* CoinListCell.swift in Sources */,
 				1803DB532BD21E680066CE99 /* SceneDelegate.swift in Sources */,
@@ -538,6 +543,7 @@
 			files = (
 				1803DB722BD21E6A0066CE99 /* ConisUITests.swift in Sources */,
 				1803DB742BD21E6A0066CE99 /* ConisUITestsLaunchTests.swift in Sources */,
+				187FBE7F2BDA65B8004D08CE /* AccessibilityIdentifire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

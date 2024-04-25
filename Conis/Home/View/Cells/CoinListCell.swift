@@ -16,6 +16,7 @@ class CoinListCell: UITableViewCell {
         containerView.layer.cornerRadius = 8
         containerView.addShadow()
         selectionStyle = .none
+        accessibilityIdentifier = AccessibilityId.Home.listCell.rawValue
     }
     
     func configure(coin: Coin) {

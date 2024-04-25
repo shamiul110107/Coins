@@ -137,7 +137,7 @@ extension HomeViewController {
             return
         }
         if ((tableView.contentOffset.y + tableView.frame.size.height) >= tableView.contentSize.height) {
-            if viewModel.currentPage <= viewModel.totalPage {
+            if viewModel.currentPage <= viewModel.coinResponse?.totalPage ?? 0 {
                 loadMore()
             }
         }

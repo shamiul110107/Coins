@@ -17,6 +17,7 @@ class TopRankCryptoTableViewCell: UITableViewCell {
         collectionView.collectionViewLayout = createLayout()
         createDataSource()
         applySnapshot(with: [])
+        accessibilityIdentifier = AccessibilityId.Home.topRankCell.rawValue
     }
     
     private func registerCell() {

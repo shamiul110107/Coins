@@ -14,6 +14,7 @@ class InviteFriendCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
+        accessibilityIdentifier = AccessibilityId.Home.inviteCell.rawValue
         containerView.layer.cornerRadius = 8
         inviteLabel.attributedText = "You can earn $10  when you invite a friend to buy crypto. Invite your friend".add(boldText: "Invite your friend", boldFont: UIFont.systemFont(ofSize: 16, weight: .bold), boldTextColor: .init(hexString: "#38A0FF"))
     }

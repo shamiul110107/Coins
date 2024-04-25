@@ -12,6 +12,7 @@ class CoinGridCell: UICollectionViewCell {
         super.awakeFromNib()
         containerView.layer.cornerRadius = 8
         containerView.addShadow()
+        accessibilityIdentifier = AccessibilityId.Home.gridCell.rawValue
     }
     
     func configure(coin: Coin) {

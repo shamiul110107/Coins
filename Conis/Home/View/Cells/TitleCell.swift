@@ -13,6 +13,7 @@ class TitleCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
+        accessibilityIdentifier = AccessibilityId.Home.titleCell.rawValue
     }
     
     func configure(title: NSAttributedString) {

@@ -17,7 +17,6 @@ class HomeViewModel: HomeViewModelProtocol {
     @Published var state: State = .normal
     var coinResponse: CoinResponse?
     
-    var totalPage = 0
     var topRankCoins: [Coin] = []
     var currentPage = 1
     var inviteFriendPos = 5
@@ -30,7 +29,6 @@ class HomeViewModel: HomeViewModelProtocol {
     func getCoins(page: Int) async {
         do {
             coinResponse = try await apiService.fetch(with: HomeEndpoints.getCoins(offset: page), type: CoinResponse.self)
-            totalPage = coinResponse?.totalPage ?? 0
             coinsData.append(contentsOf: getCoinsWithoutTopRankData(coins: coinResponse?.data?.coins))
             state = .data(coinsData)
         } catch {
